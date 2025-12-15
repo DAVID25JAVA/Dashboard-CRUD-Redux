@@ -20,9 +20,8 @@ export default function PostsPage() {
   }, [dispatch]);
 
   return (
-    <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Posts Dashboard</h1>
-
+    <div className="p-10">
+      
       {/* CREATE */}
       <AddPostForm />
 
