@@ -12,8 +12,8 @@ const Sidebar = () => {
 
   const sidebarLinks = [
     { name: "Dashboard", path: "/", icon: <LayoutDashboard /> },
-    { name: "Add Task", path: "/create-task", icon: <Plus /> },
-    { name: "All Task", path: "/task", icon: <DatabaseIcon /> },
+    // { name: "Add Post", path: "/add-posts", icon: <Plus /> },
+    { name: "All Post", path: "/post", icon: <DatabaseIcon /> },
   ];
 
   return (
