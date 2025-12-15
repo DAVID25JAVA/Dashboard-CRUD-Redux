@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchPostsAPI } from "./postService";
 
-// ✅ Async thunk to fetch posts
+// Async thunk to fetch posts
 export const fetchPosts = createAsyncThunk(
   "posts/fetch",
   async () => {

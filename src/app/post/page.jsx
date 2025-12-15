@@ -12,22 +12,18 @@ export default function PostsPage() {
   const dispatch = useDispatch();
   const { posts, loading, error } = useSelector((state) => state.posts);
 
-  console.log(posts);
-  
-
   useEffect(() => {
     dispatch(fetchPosts());
   }, [dispatch]);
 
   return (
     <div className="p-10">
-      
       {/* CREATE */}
       <AddPostForm />
 
       {/* READ */}
-      {loading &&  <LoadingAnimation/>}
-      {error &&  <Error/>}
+      {loading && <LoadingAnimation />}
+      {error && <Error />}
 
       {!loading && !error && <PostTable posts={posts} />}
     </div>
